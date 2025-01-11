@@ -1,0 +1,102 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #FFD700, #FFA500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .input-shadow {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-shadow {
+      box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
+    }
+
+    .input-container {
+      position: relative;
+    }
+
+    .input-icon {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #aaa;
+    }
+
+    .input-field {
+      padding-left: 35px !important;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .input-field:focus {
+      border-color: #4dd0e1;
+      box-shadow: 0 0 8px rgba(77, 208, 225, 0.5);
+    }
+
+    .input-field::placeholder {
+      color: #aaa;
+    }
+
+    .input-border {
+      border: 1px solid #4dd0e1;
+    }
+
+    .card-box {
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    .header-animation {
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .calculate-animation {
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .overview-box {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
